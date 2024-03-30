@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+package USER_IDENTITY;
+
+enum ProviderEnum {
+  UNKNOWN = 0;
+  GOOGLE = 1;
+}
+
+message User {
+  int32 id = 1;
+  string username = 2;
+  string email = 3;
+  bool emailVerified = 4;
+  string password = 5;
+  string image = 6;
+  repeated AuthToken authToken = 7;
+  repeated Account account = 8;
+}
+
+message Account {
+  int32 id = 1;
+  int32 userId = 2;
+  ProviderEnum provider = 3;
+  User user = 4;
+}
+
+message AuthToken {
+  int32 id = 1;
+  int32 userId = 2;
+  string accessToken = 3;
+  string refreshToken = 4;
+  string expiresAt = 5;
+  User user = 6;
+}
+
+message SignInWithProviderRequest {
+  string email = 1;
+  string image = 2;
+  ProviderEnum provider = 6;
+}
+
+message CreateAuthTokenRequest {
+  int32 id = 1;
+  string accessToken = 2;
+  string refreshToken = 3;
+  string expiresAt = 4;
+}
+
+message CanRefreshAuthTokenRequest {
+  string refreshToken = 1;
+}
+
+service AuthService {
+  rpc SignInWithProvider(SignInWithProviderRequest) returns (stream User) {}
+  rpc CreateAuthToken(CreateAuthTokenRequest) returns (stream AuthToken) {}
+  rpc CanRefreshAuthToken(CanRefreshAuthTokenRequest) returns (stream User) {}
+}
+
+message GetUserByIdRequest {
+  int32 id = 1;
+}
+
+service UserService {
+  rpc GetUserById(GetUserByIdRequest) returns (stream User) {}
+}
