@@ -17,7 +17,7 @@ module.exports = {
     node: true,
     jest: true,
   },
-  ignorePatterns: ['.eslintrc.js', 'tsconfig*.json', '*.md', 'package*.json', 'nest-cli.json', 'apps/**/prisma/client/**/*', 'shared/generated/**/*'],
+  ignorePatterns: ['./.startup/**', '.eslintrc.js', 'tsconfig*.json', '*.md', 'package*.json', 'nest-cli.json', 'apps/**/prisma/client/**/*', 'shared/generated/**/*'],
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',

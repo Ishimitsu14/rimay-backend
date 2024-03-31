@@ -12,13 +12,17 @@ import { JwtModule } from '@nestjs/jwt';
 import { FrontendGatewayConfig } from './config';
 import { JwtAuthGuard } from './guards';
 import { UserResolver } from './resolvers';
+import * as process from 'process';
 
 @Module({
   imports: [
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       installSubscriptionHandlers: true,
-      autoSchemaFile: path.join(process.cwd(), 'shared/schema/schema.gql'),
+      autoSchemaFile: path.join(
+        __dirname,
+        '../../../shared/schema/frontend-gateway/schema.gql',
+      ),
     }),
     ClientsModule.register([
       {

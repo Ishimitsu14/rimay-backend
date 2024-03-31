@@ -1,11 +1,18 @@
-import { Directive, Field, HideField, ID, Int, ObjectType } from '@nestjs/graphql';
+import {
+  Directive,
+  Field,
+  HideField,
+  ID,
+  Int,
+  ObjectType,
+} from '@nestjs/graphql';
 import { AuthToken as PrismaAuthToken, Prisma } from '@apps/user-identity';
 import { UserModel } from './user.model';
 import {
   BaseModel,
   FieldType,
   RelationField,
-} from 'packages/prisma-to-graphql-model';
+} from '@packages/prisma-to-graphql-model';
 
 type IAuthTokenModel = PrismaAuthToken &
   Partial<

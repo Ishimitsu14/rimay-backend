@@ -1,7 +1,7 @@
 import { Inject, Injectable, OnModuleInit } from '@nestjs/common';
 import { UserIdentityConfig } from '../../../user-identity/src/config';
 import { ClientGrpc } from '@nestjs/microservices';
-import { UserServiceClientImpl } from '@shared/generated/proto/user-identity';
+import { UserServiceClientImpl } from '@shared/grpc/user-identity';
 import { firstValueFrom } from 'rxjs';
 
 @Injectable()

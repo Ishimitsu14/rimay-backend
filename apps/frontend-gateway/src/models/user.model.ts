@@ -6,7 +6,7 @@ import {
   BaseModel,
   FieldType,
   RelationField,
-} from 'packages/prisma-to-graphql-model';
+} from '@packages/prisma-to-graphql-model';
 import { IsOptional } from 'class-validator';
 
 type IUserModel = PrismaUser &

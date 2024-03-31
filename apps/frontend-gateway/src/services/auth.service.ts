@@ -6,11 +6,10 @@ import {
   AuthServiceClientImpl,
   User,
   ProviderEnum,
-} from '@shared/generated/proto/user-identity';
+} from '@shared/grpc/user-identity';
 import { firstValueFrom } from 'rxjs';
 import { AuthTokenModel } from '../models';
 import { RefreshTokenInput } from '../resolvers';
-import { RefreshTokenIsInvalidException } from '@shared/errors';
 import { JwtTokenService } from './jwt-token.service';
 
 @Injectable()

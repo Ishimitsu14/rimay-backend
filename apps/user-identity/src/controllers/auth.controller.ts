@@ -1,11 +1,11 @@
-import { Controller, UseInterceptors } from '@nestjs/common';
+import { Controller } from '@nestjs/common';
 import { GrpcMethod } from '@nestjs/microservices';
 import { AuthService } from '../services';
 import {
   CanRefreshAuthTokenRequest,
   CreateAuthTokenRequest,
   SignInWithProviderRequest,
-} from '@shared/generated/proto/user-identity';
+} from '@shared/grpc/user-identity';
 @Controller()
 export class AuthController {
   constructor(private readonly authService: AuthService) {}

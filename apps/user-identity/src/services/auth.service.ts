@@ -10,7 +10,7 @@ import {
   CreateAuthTokenRequest,
   providerEnumToJSON,
   SignInWithProviderRequest,
-} from '@shared/generated/proto/user-identity';
+} from '@shared/grpc/user-identity';
 import { AuthTokenNotFoundException } from '@shared/errors/grpc/user-identity/AuthTokenNotFoundException';
 
 @Injectable()

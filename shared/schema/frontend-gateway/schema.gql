@@ -1,0 +1,50 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Account {
+  id: Int!
+  userId: Int!
+  provider: ProviderEnum!
+  user: User!
+}
+
+enum ProviderEnum {
+  GOOGLE
+}
+
+type User {
+  id: ID!
+  username: String!
+  email: String!
+  emailVerified: Boolean!
+  image: String!
+  authToken: [AuthToken!]!
+  account: [Account!]!
+}
+
+type AuthToken {
+  id: ID!
+  userId: Int!
+  accessToken: String!
+  refreshToken: String!
+  expiresAt: DateTime!
+  user: User!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Query {
+  findMe: User!
+}
+
+type Mutation {
+  refreshToken(refreshTokenInput: RefreshTokenInput!): AuthToken!
+}
+
+input RefreshTokenInput {
+  refreshToken: String!
+}

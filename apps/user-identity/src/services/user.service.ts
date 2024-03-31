@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { UserRepository } from '../repositories';
-import { GetUserByIdRequest } from '@shared/generated/proto/user-identity';
+import { GetUserByIdRequest } from '@shared/grpc/user-identity';
 
 @Injectable()
 export class UserService {

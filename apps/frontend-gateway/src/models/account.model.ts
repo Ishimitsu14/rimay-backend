@@ -15,7 +15,7 @@ import {
   BaseModel,
   FieldType,
   RelationField,
-} from 'packages/prisma-to-graphql-model';
+} from '@packages/prisma-to-graphql-model';
 
 registerEnumType(ProviderEnum, {
   name: 'ProviderEnum',
