@@ -8,7 +8,7 @@ async function bootstrap() {
     methods: ['GET', 'POST', 'OPTIONS'],
     credentials: true,
     maxAge: 600,
-    origin: ['http://localhost:3000'],
+    origin: ['http://localhost:3000', '*'],
     allowedHeaders: ['Content-Type', 'Authorization'], // Добавляем допустимые заголовки
   });
   await app.listen(FrontendGatewayConfig.get('HTTP_PORT'));
