@@ -1,5 +1,5 @@
 # prisma
-apps/*/prisma/client/
+apps/*/src/prisma/client/
 
 # compiled output
 /dist
