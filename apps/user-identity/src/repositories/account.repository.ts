@@ -1,4 +1,4 @@
-import { PrismaAdapter } from '../prisma';
+import { PrismaAdapter, ProviderEnum } from '../prisma';
 import { type Prisma } from '../prisma';
 import { Injectable } from '@nestjs/common';
 
@@ -14,6 +14,15 @@ export class AccountRepository {
     return this.prisma.account.create({
       data: accountFields,
       include: this._include,
+    });
+  }
+
+  async findUserByProviderAndId(userId: number, provider: ProviderEnum) {
+    return this.prisma.account.findFirst({
+      where: {
+        userId,
+        provider,
+      },
     });
   }
 }

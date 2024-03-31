@@ -23,10 +23,7 @@ export class AuthService {
 
   async signInWithProvider(payload: SignInWithProviderRequest) {
     const provider = providerEnumToJSON(payload.provider) as ProviderEnum;
-    let user = await this.userRepository.findByEmailAndProvider(
-      payload.email,
-      provider,
-    );
+    let user = await this.userRepository.findByEmail(payload.email);
 
     if (!user) {
       user = await this.userRepository.create({
@@ -36,7 +33,14 @@ export class AuthService {
         password: null,
         image: payload.image,
       });
+    }
 
+    const account = this.accountRepository.findUserByProviderAndId(
+      user.id,
+      provider,
+    );
+
+    if (!account) {
       await this.accountRepository.createAccount({
         userId: user.id,
         provider,
@@ -47,7 +51,6 @@ export class AuthService {
   }
 
   async createAuthToken(payload: CreateAuthTokenRequest) {
-    console.log(payload.id);
     await this.authTokenRepository.batchDelete({
       userId: payload.id,
     });

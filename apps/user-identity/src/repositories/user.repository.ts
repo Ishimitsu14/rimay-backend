@@ -26,15 +26,10 @@ export class UserRepository {
     });
   }
 
-  async findByEmailAndProvider(email: string, provider: ProviderEnum) {
+  async findByEmail(email: string) {
     return this.prisma.user.findFirst({
       where: {
         email: email,
-        account: {
-          some: {
-            provider,
-          },
-        },
       },
       include: this._include,
     });
