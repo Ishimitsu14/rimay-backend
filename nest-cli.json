@@ -5,7 +5,9 @@
   "compilerOptions": {
     "deleteOutDir": true,
     "webpack": true,
-    "assets": ["**/*.proto"],
+    "assets": [
+      "**/*.proto"
+    ],
     "watchAssets": true
   },
   "monorepo": true,
@@ -26,6 +28,15 @@
       "sourceRoot": "apps/frontend-gateway/src",
       "compilerOptions": {
         "tsConfigPath": "apps/frontend-gateway/tsconfig.app.json"
+      }
+    },
+    "flow-runner": {
+      "type": "application",
+      "root": "apps/flow-runner",
+      "entryFile": "main",
+      "sourceRoot": "apps/flow-runner/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/flow-runner/tsconfig.app.json"
       }
     }
   }
