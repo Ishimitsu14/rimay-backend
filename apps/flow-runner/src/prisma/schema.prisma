@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "./client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("FLOW_RUNNER_DATABASE_URL")
+}
+
+model Flow {
+  id        String   @db.Uuid @id
+  userId    Int
+  tasks     Task[]
+  createdAt DateTime @default(now())
+}
+
+model Task {
+  id        String   @db.Uuid @id
+  flowId    String
+  type      TypeEnum
+  data      Json?
+  result    String?
+  inputs    String[] @db.Uuid
+  flow      Flow     @relation(fields: [flowId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum TypeEnum {
+  CHATGPT
+  DALLE
+  TEXTCOMBINE
+  TEXT
+}

@@ -1,0 +1,368 @@
+{
+  "nodes": [
+    {
+      "id": "16dd8e7d-bbbd-4c02-a2dd-c9d92caa7034",
+      "position": {
+        "x": -108.54888805047435,
+        "y": 801.0646650911837
+      },
+      "type": "Text",
+      "data": {
+        "text": ""
+      }
+    },
+    {
+      "id": "6064ebec-a830-47be-bd0d-e728ec6c203d",
+      "position": {
+        "x": 1179.635705410885,
+        "y": 866.7044008966052
+      },
+      "type": "Text",
+      "data": {
+        "text": ""
+      }
+    },
+    {
+      "id": "1526cfb1-ed24-40bd-a136-7e4e72a5282a",
+      "position": {
+        "x": 2119.3231428594,
+        "y": 636.8258753817682
+      },
+      "type": "ImageViewer",
+      "data": {}
+    },
+    {
+      "id": "6f763cae-41d3-46a9-a8f6-85dff53ae0cf",
+      "position": {
+        "x": 1806.7139601849635,
+        "y": 810.3168369100176
+      },
+      "type": "Dalle",
+      "data": {
+        "prompt": "",
+        "model": "",
+        "result": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-cZczW86XUE1dt8gtOP2npDM5/user-SmR7wemxTGI1mFgifXLpqa6t/img-D8YlH25eevqkdbZg4JeDt7De.png?st=2024-03-27T17%3A09%3A10Z&se=2024-03-27T19%3A09%3A10Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-03-27T17%3A40%3A17Z&ske=2024-03-28T17%3A40%3A17Z&sks=b&skv=2021-08-06&sig=9PIOvlf2Isbk5c6HETXEGYRyJet6xDOMkZKRlITbSYk%3D"
+      }
+    },
+    {
+      "id": "4a30124e-501f-4e50-986f-dac0ee9ec766",
+      "position": {
+        "x": 1494.5957390387762,
+        "y": 602.7076542355813
+      },
+      "type": "CombineText",
+      "data": {
+        "text1": "make dalle prompt for create startup logotype",
+        "text2": "",
+        "result": "make dalle prompt for create startup logotype\n\nName:\n\nCryptoDeck StakeHouse\n\nIdea:\n\nStakeChain is a revolutionary blockchain startup that brings transparency and security to digital asset management. Our platform utilizes cutting-edge technology to securely stake and manage various cryptocurrencies, while also providing real-time insights and analytics to our users. With StakeChain, investors can confidently grow and protect their digital assets in a decentralized and secure manner. Join us as we revolutionize the world of cryptocurrency investing."
+      }
+    },
+    {
+      "id": "c9bf21ef-6363-4f20-9545-77ccd176aed1",
+      "position": {
+        "x": 2106.3412198029014,
+        "y": 115.19861576383065
+      },
+      "type": "CombineText",
+      "data": {
+        "text1": "Marketing:",
+        "text2": "",
+        "result": "Marketing:\n\n\n\nMarketing Strategy:\n\n1. Target Audience: We will target cryptocurrency enthusiasts, investors, and individuals who are interested in staking their assets in the growing Web3 ecosystem. We will also target blockchain developers and projects who are looking for a secure and efficient staking platform for their tokens.\n\n2. Social Media Presence: We will leverage social media platforms such as Twitter, LinkedIn, and Reddit to reach our target audience. We will create engaging and informative content about the benefits of staking with StakeWave, as well as share updates and success stories from our users.\n\n3. Influencer Partnerships: We will collaborate with key influencers in the cryptocurrency and blockchain space to help amplify our message and reach a wider audience. Influencers can provide valuable insights and recommendations to their followers about the benefits of staking with StakeWave.\n\n4. Community Engagement: We will build a strong community of stakeholders and users by hosting virtual events, webinars, and AMA sessions to educate and engage with our audience. By fostering a sense of community and transparency, we aim to build trust and credibility in our platform.\n\n5. Referral Program: We will implement a referral program to incentivize our users to refer friends and family to StakeWave. By offering rewards and bonuses for successful referrals, we can encourage our users to share their positive experiences with others and help grow our user base.\n\nOverall, our marketing strategy for StakeWave will focus on educating, engaging, and incentivizing our target audience to join us in the future of crypto staking. With a strong online presence, partnerships with influencers, and a focus on community building, we aim to establish StakeWave as the leading Web3 staking platform in the market."
+      }
+    },
+    {
+      "id": "dd131b53-54b4-430f-9b79-11ae5915277d",
+      "position": {
+        "x": 2422.8141043876494,
+        "y": 99.19861576383062
+      },
+      "type": "CombineText",
+      "data": {
+        "text1": "",
+        "text2": "",
+        "result": "Name:\n\n\"ChainGuardian: Secure Your Crypto Assets with Web3 Staking\"\n\nIdea:\n\nMetaStake is a revolutionary platform that allows users to discover, buy, and sell digital assets and NFTs in a decentralized marketplace. Our innovative technology leverages blockchain and smart contracts to ensure security, transparency, and authenticity for all transactions. With MetaStake, users can stake their assets, earn rewards, and participate in a vibrant community of digital collectors and creators. Join us in shaping the future of digital ownership with MetaStake.\n\nMarketing:\n\n\n\nMarketing Strategy:\n\n1. Target Audience: We will target cryptocurrency enthusiasts, investors, and individuals who are interested in staking their assets in the growing Web3 ecosystem. We will also target blockchain developers and projects who are looking for a secure and efficient staking platform for their tokens.\n\n2. Social Media Presence: We will leverage social media platforms such as Twitter, LinkedIn, and Reddit to reach our target audience. We will create engaging and informative content about the benefits of staking with StakeWave, as well as share updates and success stories from our users.\n\n3. Influencer Partnerships: We will collaborate with key influencers in the cryptocurrency and blockchain space to help amplify our message and reach a wider audience. Influencers can provide valuable insights and recommendations to their followers about the benefits of staking with StakeWave.\n\n4. Community Engagement: We will build a strong community of stakeholders and users by hosting virtual events, webinars, and AMA sessions to educate and engage with our audience. By fostering a sense of community and transparency, we aim to build trust and credibility in our platform.\n\n5. Referral Program: We will implement a referral program to incentivize our users to refer friends and family to StakeWave. By offering rewards and bonuses for successful referrals, we can encourage our users to share their positive experiences with others and help grow our user base.\n\nOverall, our marketing strategy for StakeWave will focus on educating, engaging, and incentivizing our target audience to join us in the future of crypto staking. With a strong online presence, partnerships with influencers, and a focus on community building, we aim to establish StakeWave as the leading Web3 staking platform in the market."
+      }
+    },
+    {
+      "id": "57f81149-01da-48ea-938b-73cd65e7cdef",
+      "position": {
+        "x": 1498.7139601849635,
+        "y": 132.31683691001763
+      },
+      "type": "CombineText",
+      "data": {
+        "text1": "Create short marketing strategy for startup",
+        "text2": "",
+        "result": "Create short marketing strategy for startup\n\nName:\n\n\"ChainGuardians: The Secure Web3 Staking Platform\"\n\nIdea:\n\nStakeWave is a cutting-edge startup that is leading the way in revolutionizing crypto staking in the Web3 era. Our platform offers users the ability to stake their cryptocurrencies with ease and efficiency, while ensuring maximum security and returns on their investments. With StakeWave, users can participate in decentralized networks and earn rewards through staking, all while contributing to the growth and stability of the blockchain ecosystem. Join us and be a part of the future of crypto staking with StakeWave."
+      }
+    },
+    {
+      "id": "18dae34a-d1a9-47b5-97af-ba457064465d",
+      "position": {
+        "x": 1802.7139601849635,
+        "y": 260.3168369100176
+      },
+      "type": "ChatGPT",
+      "data": {
+        "prompt": "",
+        "model": "",
+        "result": "\n\nMarketing Strategy:\n\n1. Target Audience: We will target cryptocurrency enthusiasts, investors, and individuals who are interested in staking their assets in the growing Web3 ecosystem. We will also target blockchain developers and projects who are looking for a secure and efficient staking platform for their tokens.\n\n2. Social Media Presence: We will leverage social media platforms such as Twitter, LinkedIn, and Reddit to reach our target audience. We will create engaging and informative content about the benefits of staking with StakeWave, as well as share updates and success stories from our users.\n\n3. Influencer Partnerships: We will collaborate with key influencers in the cryptocurrency and blockchain space to help amplify our message and reach a wider audience. Influencers can provide valuable insights and recommendations to their followers about the benefits of staking with StakeWave.\n\n4. Community Engagement: We will build a strong community of stakeholders and users by hosting virtual events, webinars, and AMA sessions to educate and engage with our audience. By fostering a sense of community and transparency, we aim to build trust and credibility in our platform.\n\n5. Referral Program: We will implement a referral program to incentivize our users to refer friends and family to StakeWave. By offering rewards and bonuses for successful referrals, we can encourage our users to share their positive experiences with others and help grow our user base.\n\nOverall, our marketing strategy for StakeWave will focus on educating, engaging, and incentivizing our target audience to join us in the future of crypto staking. With a strong online presence, partnerships with influencers, and a focus on community building, we aim to establish StakeWave as the leading Web3 staking platform in the market."
+      }
+    },
+    {
+      "id": "dff65ae5-092f-4b71-aa30-ff620df69d6e",
+      "position": {
+        "x": 1176.7139601849635,
+        "y": 388.3168369100176
+      },
+      "type": "CombineText",
+      "data": {
+        "text1": "",
+        "text2": "",
+        "result": "Name:\n\n\"ChainGuardians: The Secure Web3 Staking Platform\"\n\nIdea:\n\nStakeWave is a cutting-edge startup that is leading the way in revolutionizing crypto staking in the Web3 era. Our platform offers users the ability to stake their cryptocurrencies with ease and efficiency, while ensuring maximum security and returns on their investments. With StakeWave, users can participate in decentralized networks and earn rewards through staking, all while contributing to the growth and stability of the blockchain ecosystem. Join us and be a part of the future of crypto staking with StakeWave."
+      }
+    },
+    {
+      "id": "e3cd0b08-9836-4f0c-9bd9-5f52e1fac4ef",
+      "position": {
+        "x": 562.7139601849635,
+        "y": 746.3168369100176
+      },
+      "type": "ChatGPT",
+      "data": {
+        "prompt": "",
+        "model": "",
+        "result": "StakeWave is a cutting-edge startup that is leading the way in revolutionizing crypto staking in the Web3 era. Our platform offers users the ability to stake their cryptocurrencies with ease and efficiency, while ensuring maximum security and returns on their investments. With StakeWave, users can participate in decentralized networks and earn rewards through staking, all while contributing to the growth and stability of the blockchain ecosystem. Join us and be a part of the future of crypto staking with StakeWave."
+      }
+    },
+    {
+      "id": "fe3720cf-2fa2-48c2-92aa-a4ae66c24e3d",
+      "position": {
+        "x": 866.7139601849635,
+        "y": 594.3168369100176
+      },
+      "type": "CombineText",
+      "data": {
+        "text1": "Idea:",
+        "text2": "",
+        "result": "Idea:\n\nStakeWave is a cutting-edge startup that is leading the way in revolutionizing crypto staking in the Web3 era. Our platform offers users the ability to stake their cryptocurrencies with ease and efficiency, while ensuring maximum security and returns on their investments. With StakeWave, users can participate in decentralized networks and earn rewards through staking, all while contributing to the growth and stability of the blockchain ecosystem. Join us and be a part of the future of crypto staking with StakeWave."
+      }
+    },
+    {
+      "id": "bd16510c-a4ea-4a6c-a913-e503af08fe03",
+      "position": {
+        "x": 253.4955948360909,
+        "y": 583.7897214947656
+      },
+      "type": "CombineText",
+      "data": {
+        "text1": "create startup description by suggested startup name",
+        "text2": "",
+        "result": "create startup description by suggested startup name\n\n\"StakeWave: Revolutionizing Crypto Staking in the Web3 Era\""
+      }
+    },
+    {
+      "id": "11506d01-0e1c-47d4-bd2f-297d409bd73e",
+      "position": {
+        "x": 860.7139601849635,
+        "y": 119.31683691001763
+      },
+      "type": "CombineText",
+      "data": {
+        "text1": "Name:",
+        "text2": "",
+        "result": "Name:\n\n\"ChainGuardians: The Secure Web3 Staking Platform\""
+      }
+    },
+    {
+      "id": "7e4b299e-f290-42ae-84f7-239750428a88",
+      "position": {
+        "x": 2770.994111499169,
+        "y": 44.83347500883406
+      },
+      "type": "TextViewer",
+      "data": {}
+    },
+    {
+      "id": "ee8a4977-1c9c-40fa-a7fd-32c3221489f7",
+      "position": {
+        "x": 548.9137631683907,
+        "y": 262.22675934732166
+      },
+      "type": "ChatGPT",
+      "data": {
+        "prompt": "",
+        "model": "",
+        "result": "\"StakeWave: Revolutionizing Crypto Staking in the Web3 Era\""
+      }
+    },
+    {
+      "id": "5bdbc28e-c6c2-4678-b0bd-e37d8841f5ef",
+      "position": {
+        "x": -150.9048175152936,
+        "y": 381.60291534964483
+      },
+      "type": "Text",
+      "data": {
+        "text": "web3 crypto staking"
+      }
+    },
+    {
+      "id": "3c044973-0407-4122-be23-8cf2b489c1f6",
+      "position": {
+        "x": 185,
+        "y": 81
+      },
+      "type": "CombineText",
+      "data": {
+        "text1": "",
+        "text2": "",
+        "result": "imagine a name of startup about\n\nweb3 crypto staking"
+      }
+    },
+    {
+      "id": "6b4d9569-e668-4fd1-af45-9611f4acf1b9",
+      "position": {
+        "x": -149,
+        "y": 77
+      },
+      "type": "Text",
+      "data": {
+        "text": "imagine a name of startup about"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "reactflow__edge-6b4d9569-e668-4fd1-af45-9611f4acf1b9-3c044973-0407-4122-be23-8cf2b489c1f63c044973-0407-4122-be23-8cf2b489c1f6_text1",
+      "source": "6b4d9569-e668-4fd1-af45-9611f4acf1b9",
+      "sourceHandle": null,
+      "target": "3c044973-0407-4122-be23-8cf2b489c1f6",
+      "targetHandle": "3c044973-0407-4122-be23-8cf2b489c1f6_text1"
+    },
+    {
+      "id": "reactflow__edge-5bdbc28e-c6c2-4678-b0bd-e37d8841f5ef-3c044973-0407-4122-be23-8cf2b489c1f63c044973-0407-4122-be23-8cf2b489c1f6_text2",
+      "source": "5bdbc28e-c6c2-4678-b0bd-e37d8841f5ef",
+      "sourceHandle": null,
+      "target": "3c044973-0407-4122-be23-8cf2b489c1f6",
+      "targetHandle": "3c044973-0407-4122-be23-8cf2b489c1f6_text2"
+    },
+    {
+      "id": "reactflow__edge-3c044973-0407-4122-be23-8cf2b489c1f6-ee8a4977-1c9c-40fa-a7fd-32c3221489f7ee8a4977-1c9c-40fa-a7fd-32c3221489f7_prompt",
+      "source": "3c044973-0407-4122-be23-8cf2b489c1f6",
+      "sourceHandle": null,
+      "target": "ee8a4977-1c9c-40fa-a7fd-32c3221489f7",
+      "targetHandle": "ee8a4977-1c9c-40fa-a7fd-32c3221489f7_prompt"
+    },
+    {
+      "id": "reactflow__edge-ee8a4977-1c9c-40fa-a7fd-32c3221489f7-11506d01-0e1c-47d4-bd2f-297d409bd73e11506d01-0e1c-47d4-bd2f-297d409bd73e_text2",
+      "source": "ee8a4977-1c9c-40fa-a7fd-32c3221489f7",
+      "sourceHandle": null,
+      "target": "11506d01-0e1c-47d4-bd2f-297d409bd73e",
+      "targetHandle": "11506d01-0e1c-47d4-bd2f-297d409bd73e_text2"
+    },
+    {
+      "id": "reactflow__edge-bd16510c-a4ea-4a6c-a913-e503af08fe03-e3cd0b08-9836-4f0c-9bd9-5f52e1fac4efe3cd0b08-9836-4f0c-9bd9-5f52e1fac4ef_prompt",
+      "source": "bd16510c-a4ea-4a6c-a913-e503af08fe03",
+      "sourceHandle": null,
+      "target": "e3cd0b08-9836-4f0c-9bd9-5f52e1fac4ef",
+      "targetHandle": "e3cd0b08-9836-4f0c-9bd9-5f52e1fac4ef_prompt"
+    },
+    {
+      "id": "reactflow__edge-e3cd0b08-9836-4f0c-9bd9-5f52e1fac4ef-fe3720cf-2fa2-48c2-92aa-a4ae66c24e3dfe3720cf-2fa2-48c2-92aa-a4ae66c24e3d_text2",
+      "source": "e3cd0b08-9836-4f0c-9bd9-5f52e1fac4ef",
+      "sourceHandle": null,
+      "target": "fe3720cf-2fa2-48c2-92aa-a4ae66c24e3d",
+      "targetHandle": "fe3720cf-2fa2-48c2-92aa-a4ae66c24e3d_text2"
+    },
+    {
+      "id": "reactflow__edge-11506d01-0e1c-47d4-bd2f-297d409bd73e-dff65ae5-092f-4b71-aa30-ff620df69d6edff65ae5-092f-4b71-aa30-ff620df69d6e_text1",
+      "source": "11506d01-0e1c-47d4-bd2f-297d409bd73e",
+      "sourceHandle": null,
+      "target": "dff65ae5-092f-4b71-aa30-ff620df69d6e",
+      "targetHandle": "dff65ae5-092f-4b71-aa30-ff620df69d6e_text1"
+    },
+    {
+      "id": "reactflow__edge-fe3720cf-2fa2-48c2-92aa-a4ae66c24e3d-dff65ae5-092f-4b71-aa30-ff620df69d6edff65ae5-092f-4b71-aa30-ff620df69d6e_text2",
+      "source": "fe3720cf-2fa2-48c2-92aa-a4ae66c24e3d",
+      "sourceHandle": null,
+      "target": "dff65ae5-092f-4b71-aa30-ff620df69d6e",
+      "targetHandle": "dff65ae5-092f-4b71-aa30-ff620df69d6e_text2"
+    },
+    {
+      "id": "reactflow__edge-dff65ae5-092f-4b71-aa30-ff620df69d6e-57f81149-01da-48ea-938b-73cd65e7cdef57f81149-01da-48ea-938b-73cd65e7cdef_text2",
+      "source": "dff65ae5-092f-4b71-aa30-ff620df69d6e",
+      "sourceHandle": null,
+      "target": "57f81149-01da-48ea-938b-73cd65e7cdef",
+      "targetHandle": "57f81149-01da-48ea-938b-73cd65e7cdef_text2"
+    },
+    {
+      "id": "reactflow__edge-57f81149-01da-48ea-938b-73cd65e7cdef-18dae34a-d1a9-47b5-97af-ba457064465d18dae34a-d1a9-47b5-97af-ba457064465d_prompt",
+      "source": "57f81149-01da-48ea-938b-73cd65e7cdef",
+      "sourceHandle": null,
+      "target": "18dae34a-d1a9-47b5-97af-ba457064465d",
+      "targetHandle": "18dae34a-d1a9-47b5-97af-ba457064465d_prompt"
+    },
+    {
+      "id": "reactflow__edge-dff65ae5-092f-4b71-aa30-ff620df69d6e-dd131b53-54b4-430f-9b79-11ae5915277ddd131b53-54b4-430f-9b79-11ae5915277d_text1",
+      "source": "dff65ae5-092f-4b71-aa30-ff620df69d6e",
+      "sourceHandle": null,
+      "target": "dd131b53-54b4-430f-9b79-11ae5915277d",
+      "targetHandle": "dd131b53-54b4-430f-9b79-11ae5915277d_text1"
+    },
+    {
+      "id": "reactflow__edge-18dae34a-d1a9-47b5-97af-ba457064465d-c9bf21ef-6363-4f20-9545-77ccd176aed1c9bf21ef-6363-4f20-9545-77ccd176aed1_text2",
+      "source": "18dae34a-d1a9-47b5-97af-ba457064465d",
+      "sourceHandle": null,
+      "target": "c9bf21ef-6363-4f20-9545-77ccd176aed1",
+      "targetHandle": "c9bf21ef-6363-4f20-9545-77ccd176aed1_text2"
+    },
+    {
+      "id": "reactflow__edge-c9bf21ef-6363-4f20-9545-77ccd176aed1-dd131b53-54b4-430f-9b79-11ae5915277ddd131b53-54b4-430f-9b79-11ae5915277d_text2",
+      "source": "c9bf21ef-6363-4f20-9545-77ccd176aed1",
+      "sourceHandle": null,
+      "target": "dd131b53-54b4-430f-9b79-11ae5915277d",
+      "targetHandle": "dd131b53-54b4-430f-9b79-11ae5915277d_text2"
+    },
+    {
+      "id": "reactflow__edge-dd131b53-54b4-430f-9b79-11ae5915277d-7e4b299e-f290-42ae-84f7-239750428a88",
+      "source": "dd131b53-54b4-430f-9b79-11ae5915277d",
+      "sourceHandle": null,
+      "target": "7e4b299e-f290-42ae-84f7-239750428a88",
+      "targetHandle": null
+    },
+    {
+      "id": "reactflow__edge-dff65ae5-092f-4b71-aa30-ff620df69d6e-4a30124e-501f-4e50-986f-dac0ee9ec7664a30124e-501f-4e50-986f-dac0ee9ec766_text2",
+      "source": "dff65ae5-092f-4b71-aa30-ff620df69d6e",
+      "sourceHandle": null,
+      "target": "4a30124e-501f-4e50-986f-dac0ee9ec766",
+      "targetHandle": "4a30124e-501f-4e50-986f-dac0ee9ec766_text2"
+    },
+    {
+      "id": "reactflow__edge-4a30124e-501f-4e50-986f-dac0ee9ec766-6f763cae-41d3-46a9-a8f6-85dff53ae0cf6f763cae-41d3-46a9-a8f6-85dff53ae0cf_prompt",
+      "source": "4a30124e-501f-4e50-986f-dac0ee9ec766",
+      "sourceHandle": null,
+      "target": "6f763cae-41d3-46a9-a8f6-85dff53ae0cf",
+      "targetHandle": "6f763cae-41d3-46a9-a8f6-85dff53ae0cf_prompt"
+    },
+    {
+      "id": "reactflow__edge-6f763cae-41d3-46a9-a8f6-85dff53ae0cf-1526cfb1-ed24-40bd-a136-7e4e72a5282a",
+      "source": "6f763cae-41d3-46a9-a8f6-85dff53ae0cf",
+      "sourceHandle": null,
+      "target": "1526cfb1-ed24-40bd-a136-7e4e72a5282a",
+      "targetHandle": null
+    },
+    {
+      "id": "reactflow__edge-ee8a4977-1c9c-40fa-a7fd-32c3221489f7-bd16510c-a4ea-4a6c-a913-e503af08fe03bd16510c-a4ea-4a6c-a913-e503af08fe03_text2",
+      "source": "ee8a4977-1c9c-40fa-a7fd-32c3221489f7",
+      "sourceHandle": null,
+      "target": "bd16510c-a4ea-4a6c-a913-e503af08fe03",
+      "targetHandle": "bd16510c-a4ea-4a6c-a913-e503af08fe03_text2"
+    }
+  ],
+  "viewport": {
+    "x": 146.9845755914912,
+    "y": 101.63587702623404,
+    "zoom": 0.5
+  }
+}
