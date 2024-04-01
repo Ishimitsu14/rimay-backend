@@ -29,6 +29,8 @@ export class TaskService {
       },
     });
 
+    // send runner to NATS
+
     return this.wrap(task);
   }
 
