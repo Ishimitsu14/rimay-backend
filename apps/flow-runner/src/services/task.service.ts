@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { TaskRepository } from '../repositories';
 import { Node } from '../types/reactflow.types';
-import { TypeEnum, type Prisma, Task as TaskModel } from '../prisma/client';
+import { TypeEnum, Task as TaskModel } from '../prisma/client';
 
 abstract class Task {
   protected _result?: string;
@@ -53,9 +53,12 @@ class CombineTextTask extends Task {}
 class TextViewerTask extends Task {}
 
 class NotExecutableTask extends Task {
-  constructor(node: Node) {
-    super(node);
-    this._result = node.data.text;
+  constructor(model: TaskModel) {
+    super(model);
+    if (!model.data || !model.data['text']) {
+      throw Error('data and text cannot be null');
+    }
+    this._result = model.data['text'];
   }
 
   set result(val: string) {}
@@ -79,7 +82,7 @@ export class TaskService {
   constructor(private readonly taskRepository: TaskRepository) {}
 
   getTask(id: string) {
-    return this.tasks.get(id);
+    return this.taskRepository.findById(id);
   }
 
   async createTask(flowId: string, node: Node) {

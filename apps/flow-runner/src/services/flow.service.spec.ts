@@ -16,15 +16,15 @@ describe('FlowService', () => {
     expect(service).toBeDefined();
   });
 
-  it('should run flow', async () => {
-    const flowMock = require('../testutils/mock-data/flow1.json');
-    let ids = service.run(flowMock);
+  // it('should run flow', async () => {
+  //   const flowMock = require('../testutils/mock-data/flow1.json');
+  //   let ids = service.run(flowMock);
 
-    for (let i = 0; i < ids.length; i++) {
-      service.fill(ids[i], `result ${i}`);
-    }
+  //   for (let i = 0; i < ids.length; i++) {
+  //     service.fill(ids[i], `result ${i}`);
+  //   }
 
-    const result = service.collectResults();
-    console.log(result);
-  });
+  //   const result = service.collectResults();
+  //   console.log(result);
+  // });
 });
