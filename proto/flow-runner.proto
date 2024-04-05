@@ -4,3 +4,8 @@ package FLOW_RUNNER;
 
 service FlowRunner {
 }
+
+// v1.flowrunner.flow.new
+message NewFlow {
+  string id = 1; // UUID
+}

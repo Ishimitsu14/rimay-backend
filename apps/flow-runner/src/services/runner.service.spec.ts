@@ -11,7 +11,11 @@ import { v4 } from 'uuid';
 import { connect } from 'nats';
 import { NewTask } from '@shared/grpc/chatgpt-adapter';
 import { ProtoSerializer } from '../serialization/serializer.class';
-import { IdleDeserializer } from '../serialization/deserializer.class';
+import {
+  IdleDeserializer,
+  ProtoDeserializer,
+} from '../serialization/deserializer.class';
+import { PROTO_MSG_MAP } from '../types/proto-message.map';
 
 class DeserializerImpl implements Deserializer {
   deserialize(value: any, options?: Record<string, any>) {
@@ -35,8 +39,8 @@ describe('RunnerService', () => {
               name: 'flowrunner0',
               pass: '12345',
               user: 'user',
-              serializer: new ProtoSerializer(),
-              deserializer: new IdleDeserializer(),
+              serializer: new ProtoSerializer(PROTO_MSG_MAP),
+              deserializer: new ProtoDeserializer(PROTO_MSG_MAP),
             },
           },
         ]),
