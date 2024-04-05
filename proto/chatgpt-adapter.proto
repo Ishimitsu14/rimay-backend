@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package CHATGPT_ADAPTER;
+
+service ChatGptAdaper {
+}
+
+// NATS subjects
+
+// v1.chatgpt.task.new
+message NewTask {
+  string id = 1; // UUID
+}
