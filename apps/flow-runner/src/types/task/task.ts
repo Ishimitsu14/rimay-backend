@@ -1,6 +1,6 @@
-import { TypeEnum, Task as TaskModel } from '../../prisma/client';
+import { Task as TaskModel } from '../../prisma/client';
 
-abstract class Task {
+export abstract class Task {
   protected _result?: string;
   private data: any;
   private _inputs: string[];
@@ -37,6 +37,10 @@ abstract class Task {
       //   data: this.data,
     });
   }
+
+  public static from(model: TaskModel) {
+    return new TASK_MAP[model.type](model);
+  }
 }
 
 export class ChatGPTTask extends Task {}
@@ -65,11 +69,11 @@ class NotExecutableTask extends Task {
   }
 }
 
-export const TASK_MAP = {
-  ChatGPT: ChatGPTTask,
-  Text: NotExecutableTask,
-  ImageViewer: ImageViewerTask,
-  Dalle: DalleTask,
-  CombineText: CombineTextTask,
-  TextViewer: TextViewerTask,
+const TASK_MAP = {
+  CHATGPT: ChatGPTTask,
+  TEXT: NotExecutableTask,
+  IMAGE_VIEWER: ImageViewerTask,
+  DALLE: DalleTask,
+  COMBINE_TEXT: CombineTextTask,
+  TEXT_VIEWER: TextViewerTask,
 };

@@ -1,4 +1,4 @@
-import { PrismaAdapter } from '../prisma';
+import { PrismaAdapter, TaskStatusEnum } from '../prisma';
 import { type Prisma } from '../prisma';
 import { Injectable } from '@nestjs/common';
 
@@ -51,10 +51,11 @@ export class TaskRepository {
     });
   }
 
-  async findByFlow(id: string) {
+  async findByFlow(id: string, status?: TaskStatusEnum) {
     return this.prisma.task.findMany({
       where: {
         id,
+        status,
       },
       include: this._include,
     });

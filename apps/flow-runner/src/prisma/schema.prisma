@@ -18,7 +18,8 @@ model Flow {
 model Task {
   id        String   @db.Uuid @id
   flowId    String
-  type      TypeEnum
+  type      TaskTypeEnum
+  status    TaskStatusEnum
   data      Json?
   result    String?
   inputs    String[] @db.Uuid
@@ -27,9 +28,17 @@ model Task {
   updatedAt DateTime @updatedAt
 }
 
-enum TypeEnum {
+enum TaskTypeEnum {
   CHATGPT
   DALLE
-  TEXTCOMBINE
+  COMBINE_TEXT
   TEXT
+  IMAGE_VIEWER
+  TEXT_VIEWER
+}
+
+enum TaskStatusEnum {
+  CREATED
+  PROCESSING
+  DONE
 }

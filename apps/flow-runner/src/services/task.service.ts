@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { TaskRepository } from '../repositories';
-import { Node } from '../types/reactflow.types';
-import { TypeEnum, Task as TaskModel } from '../prisma/client';
-import { TASK_MAP } from '../types/task/task';
+import { TaskTypeEnum, TaskStatusEnum } from '../prisma/client';
+import { Task as TaskObject } from '../types/task/task';
+import { Node, nodeTypeToJSON } from '@shared/grpc/flow-runner';
 
 @Injectable()
 export class TaskService {
@@ -12,15 +12,20 @@ export class TaskService {
     return this.taskRepository.findById(id);
   }
 
+  getCreatedTasksBy(flowId: string) {
+    return this.taskRepository.findByFlow(flowId, TaskStatusEnum.CREATED);
+  }
+
   async createTask(flowId: string, node: Node) {
     const existing = await this.taskRepository.findById(node.id);
     if (existing) {
       throw Error('already exits');
     }
-    // wrap to class first, then create
+
     const task = await this.taskRepository.create({
       id: node.id,
-      type: TypeEnum[node.type.toUpperCase()],
+      type: TaskTypeEnum[nodeTypeToJSON(node.type)],
+      status: TaskStatusEnum.CREATED,
       data: node.data,
       flow: {
         connect: {
@@ -29,16 +34,10 @@ export class TaskService {
       },
     });
 
-    // send runner to NATS
-
-    return this.wrap(task);
+    return TaskObject.from(task);
   }
 
   async link(id: string, inputs: string[]) {
     await this.taskRepository.setInputs(id, inputs);
-  }
-
-  private wrap(model: TaskModel) {
-    return new TASK_MAP[model.type](model);
   }
 }

@@ -7,16 +7,29 @@ export const protobufPackage = "CHATGPT_ADAPTER";
 export interface NewTask {
   /** UUID */
   id: string;
+  prompt: string;
+  model: string;
+  /** float */
+  temperature: string;
 }
 
 function createBaseNewTask(): NewTask {
-  return { id: "" };
+  return { id: "", prompt: "", model: "", temperature: "" };
 }
 
 export const NewTask = {
   encode(message: NewTask, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     if (message.id !== "") {
       writer.uint32(10).string(message.id);
+    }
+    if (message.prompt !== "") {
+      writer.uint32(18).string(message.prompt);
+    }
+    if (message.model !== "") {
+      writer.uint32(26).string(message.model);
+    }
+    if (message.temperature !== "") {
+      writer.uint32(34).string(message.temperature);
     }
     return writer;
   },
@@ -35,6 +48,27 @@ export const NewTask = {
 
           message.id = reader.string();
           continue;
+        case 2:
+          if (tag !== 18) {
+            break;
+          }
+
+          message.prompt = reader.string();
+          continue;
+        case 3:
+          if (tag !== 26) {
+            break;
+          }
+
+          message.model = reader.string();
+          continue;
+        case 4:
+          if (tag !== 34) {
+            break;
+          }
+
+          message.temperature = reader.string();
+          continue;
       }
       if ((tag & 7) === 4 || tag === 0) {
         break;
@@ -45,13 +79,27 @@ export const NewTask = {
   },
 
   fromJSON(object: any): NewTask {
-    return { id: isSet(object.id) ? globalThis.String(object.id) : "" };
+    return {
+      id: isSet(object.id) ? globalThis.String(object.id) : "",
+      prompt: isSet(object.prompt) ? globalThis.String(object.prompt) : "",
+      model: isSet(object.model) ? globalThis.String(object.model) : "",
+      temperature: isSet(object.temperature) ? globalThis.String(object.temperature) : "",
+    };
   },
 
   toJSON(message: NewTask): unknown {
     const obj: any = {};
     if (message.id !== "") {
       obj.id = message.id;
+    }
+    if (message.prompt !== "") {
+      obj.prompt = message.prompt;
+    }
+    if (message.model !== "") {
+      obj.model = message.model;
+    }
+    if (message.temperature !== "") {
+      obj.temperature = message.temperature;
     }
     return obj;
   },
@@ -62,6 +110,9 @@ export const NewTask = {
   fromPartial<I extends Exact<DeepPartial<NewTask>, I>>(object: I): NewTask {
     const message = createBaseNewTask();
     message.id = object.id ?? "";
+    message.prompt = object.prompt ?? "";
+    message.model = object.model ?? "";
+    message.temperature = object.temperature ?? "";
     return message;
   },
 };
