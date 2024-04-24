@@ -20,7 +20,7 @@ export class ConfigService<ConfigScheme extends { [key: string]: any }> {
 
   constructor(serviceName: string) {
     this._envConfig = dotenv.parse(
-      fs.readFileSync(path.join(__dirname, '../../../.env')),
+      fs.readFileSync(path.join(__dirname, '../../.env')),
     );
     this._serviceName = serviceName;
   }

@@ -4,6 +4,7 @@
 ## Installation
 
 ```bash
+$ yarn global add protoc
 $ yarn install
 ```
 
@@ -63,4 +64,11 @@ $ yarn proto:generate
 
 # Generate types for selected service
 $ yarn proto:generate {service_name}
+```
+
+## Testing
+### Run tests globally
+
+```bash
+$ yarn test
 ```

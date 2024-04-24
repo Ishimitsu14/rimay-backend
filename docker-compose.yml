@@ -10,3 +10,11 @@ services:
       - POSTGRES_MULTIPLE_DATABASES="user_identity"
     ports:
       - '5432:5432'
+  
+  nats:
+    container_name: nats_rimay
+    image: nats:2.10.12-alpine3.19
+    restart: always
+    command: "--cluster_name NATS --user user --pass 12345 -D"
+    ports:
+      - '4222:4222'

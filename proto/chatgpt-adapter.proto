@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package CHATGPT_ADAPTER;
+
+/**
+ *  ____                  _          
+ * / ___|  ___ _ ____   _(_) ___ ___ 
+ * \___ \ / _ \ '__\ \ / / |/ __/ _ \
+ * ___) |  __/ |   \ V /| | (_|  __/
+ * |____/ \___|_|    \_/ |_|\___\___|
+ */
+
+service ChatGptAdaper {
+}
+
+/* 
+ *  _   _       _       
+ * | \ | | __ _| |_ ___ 
+ * |  \| |/ _` | __/ __|
+ * | |\  | (_| | |_\__ \
+ * |_| \_|\__,_|\__|___/
+ */
+
+// v1.chatgpt.task.new
+message NewTask {
+  string id = 1; // UUID
+  string prompt = 2;
+  string model = 3;
+  string temperature = 4; // float
+}

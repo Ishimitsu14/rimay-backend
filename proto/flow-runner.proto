@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+package FLOW_RUNNER;
+
+/**
+ *  _____       _   _ _   _           
+ * | ____|_ __ | |_(_) |_(_) ___  ___ 
+ * |  _| | '_ \| __| | __| |/ _ \/ __|
+ * | |___| | | | |_| | |_| |  __/\__ \
+ * |_____|_| |_|\__|_|\__|_|\___||___/
+ */
+
+ enum NodeType {
+  UNKNOWN = 0;
+  TEXT = 1;
+  IMAGE_VIEWER = 2;
+  DALLE = 3;
+  COMBINE_TEXT = 4;
+  CHATGPT = 5;
+  TEXT_VIEWER = 6;
+ }
+
+ message Node {
+  string id = 1; // UUID
+  NodeType type = 2;
+  map<string, string> data = 3;
+ }
+
+ message Edge {
+  string id = 1;
+  string source = 2; // UUID
+  string target = 3; // UUID
+  string target_handle = 4;
+ }
+
+ message Flow {
+  string id = 1; // UUID
+  uint64 user_id = 2;
+  repeated Node nodes = 3;
+  repeated Edge edges = 4;
+ }
+
+/**
+ *  ____                  _          
+ * / ___|  ___ _ ____   _(_) ___ ___ 
+ * \___ \ / _ \ '__\ \ / / |/ __/ _ \
+ * ___) |  __/ |   \ V /| | (_|  __/
+ * |____/ \___|_|    \_/ |_|\___\___|
+ */
+
+service FlowRunner {
+  rpc GetFlowResults(GetFLowResultsRequest) returns (GetFlowResultsResponse);
+}
+
+message GetFLowResultsRequest {
+  string id = 1; // UUID
+}
+
+message GetFlowResultsResponse {
+  map<string, string> results = 1; // UUID => string
+}
+
+/* 
+ *  _   _       _       
+ * | \ | | __ _| |_ ___ 
+ * |  \| |/ _` | __/ __|
+ * | |\  | (_| | |_\__ \
+ * |_| \_|\__,_|\__|___/
+ */
+
+// v1.flowrunner.flow.new
+message NewFlow {
+  Flow flow = 1;
+}
